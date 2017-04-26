@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.ui_demo2.MainActivity">
+    <!--fragment-->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/initcolor"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:onClick="onClick"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/a1_linear">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a1"
+                    android:background="@drawable/a11"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a1_text"
+                    android:text="今日步数"
+                    android:textColor="@color/cornflowerblue"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:id="@+id/a2_linear">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a2"
+                    android:background="@drawable/a2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a2_text"
+                    android:text="身体状况"
+                    android:textColor="@color/initcolor"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+
+                android:background="#ffffff" />
+
+
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:id="@+id/a3_linear">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a3"
+                    android:background="@drawable/a3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a3_text"
+                    android:text="用户设置"
+                    android:textColor="@color/initcolor"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
