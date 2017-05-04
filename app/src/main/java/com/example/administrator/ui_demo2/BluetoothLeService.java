@@ -24,6 +24,8 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.administrator.ui_demo2.Bluetooth.SampleGattAttributes;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -288,7 +290,7 @@ public class BluetoothLeService extends Service {
             BluetoothGattDescriptor descriptor = characteristic.getDescriptor(
                     UUID.fromString(SampleGattAttributes.CLIENT_CHARACTERISTIC_CONFIG));
             if (descriptor == null) {
-                Toast.makeText(getApplicationContext(), "descriptor写入失败", Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(), "descriptor写入失败", Toast.LENGTH_SHORT).show();
             } else {
                 descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
                 mBluetoothGatt.writeDescriptor(descriptor);

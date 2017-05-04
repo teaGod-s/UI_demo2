@@ -1,4 +1,4 @@
-package com.example.administrator.ui_demo2;
+package com.example.administrator.ui_demo2.Bluetooth;
 
 /**
  * Created by teaGod on 2016/11/17.
@@ -14,12 +14,12 @@ import java.util.HashMap;
 public class SampleGattAttributes {
     private static HashMap<String, String> attributes = new HashMap();
     public static String HEART_RATE_MEASUREMENT = "00002a37-0000-1000-8000-00805f9b34fb";
-    public static String Heart_Rate_Control_Point = "00002a39-0000-1000-8000-00805f9b34fb";
-    public static String DEVICE_NAME = "00002a00-0000-1000-8000-00805f9b34fb";
-    public static String BATTERY_LEVEL = "00002a19-0000-1000-8000-00805f9b34fb";
+    private static String Heart_Rate_Control_Point = "00002a39-0000-1000-8000-00805f9b34fb";
+    private static String DEVICE_NAME = "00002a00-0000-1000-8000-00805f9b34fb";
+    private static String BATTERY_LEVEL = "00002a19-0000-1000-8000-00805f9b34fb";
     public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
-    public static String APPEARANCE = "00002a01-0000-1000-8000-00805f9b34fb";
-    public static String ALERT_LEVEL = "00002a06-0000-1000-8000-00805f9b34fb";
+    private static String APPEARANCE = "00002a01-0000-1000-8000-00805f9b34fb";
+    private static String ALERT_LEVEL = "00002a06-0000-1000-8000-00805f9b34fb";
 
     static {
         // Sample Services.

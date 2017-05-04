@@ -19,21 +19,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity">
+        <activity android:name=".Activity.SignUpActivity">
 
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Activity.LoginActivity">
 
         </activity>
         <activity
-            android:name=".DeviceScanActivity"
+            android:name=".Activity.DeviceScanActivity"
             android:label="@string/scanning">
         </activity>
 

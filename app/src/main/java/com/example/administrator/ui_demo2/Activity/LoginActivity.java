@@ -1,7 +1,9 @@
-package com.example.administrator.ui_demo2;
+package com.example.administrator.ui_demo2.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.administrator.ui_demo2.R;
 
 public class LoginActivity extends AppCompatActivity {
 

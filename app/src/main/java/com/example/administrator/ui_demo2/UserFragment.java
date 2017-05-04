@@ -23,6 +23,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.administrator.ui_demo2.Activity.DeviceScanActivity;
+import com.example.administrator.ui_demo2.Bluetooth.NameAndAddressPreference;
+import com.example.administrator.ui_demo2.Bluetooth.SampleGattAttributes;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

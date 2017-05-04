@@ -1,4 +1,4 @@
-package com.example.administrator.ui_demo2;
+package com.example.administrator.ui_demo2.Activity;
 
 
 import android.net.Uri;
@@ -13,10 +13,14 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.administrator.ui_demo2.Fragment.MessageFragment;
 import com.example.administrator.ui_demo2.Fragment.TabFragment;
+import com.example.administrator.ui_demo2.R;
+import com.example.administrator.ui_demo2.UserFragment;
 
 public class MainActivity extends FragmentActivity
-        implements OnClickListener,TabFragment.OnFragmentInteractionListener,UserFragment.OnFragmentInteractionListener {
+        implements OnClickListener,TabFragment.OnFragmentInteractionListener,UserFragment.OnFragmentInteractionListener,
+        MessageFragment.OnFragmentInteractionListener {
 
     // 三个选项卡
     //private LinearLayout tab1Layout, tab2Layout, tab3Layout;
@@ -118,7 +122,7 @@ public class MainActivity extends FragmentActivity
             case R.id.a2:
                 Log.v("tag","fragment2");
                 if (tab2Fragment == null) {
-                    tab2Fragment = new TabFragment();
+                    tab2Fragment = new MessageFragment();
                 }
                 replaceFragment(tab2Fragment);
                 a2.setBackground(getResources().getDrawable(R.drawable.a22));

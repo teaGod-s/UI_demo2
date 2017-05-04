@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.ui_demo2.MainActivity">
+    tools:context="com.example.administrator.ui_demo2.Activity.MainActivity">
     <!--fragment-->
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"></FrameLayout>
+        android:layout_weight="1"/>
 
 
     <LinearLayout
@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/a1_text"
-                    android:text="今日步数"
+                    android:text="健康"
                     android:textColor="@color/cornflowerblue"/>
             </LinearLayout>
 
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/a2_text"
-                    android:text="身体状况"
+                    android:text="消息"
                     android:textColor="@color/initcolor"/>
             </LinearLayout>
 
@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/a3_text"
-                    android:text="用户设置"
+                    android:text="设置"
                     android:textColor="@color/initcolor"/>
             </LinearLayout>
 

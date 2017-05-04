@@ -1,4 +1,4 @@
-package com.example.administrator.ui_demo2;
+package com.example.administrator.ui_demo2.Activity;
 
 /**
  * Created by teaGod on 2016/11/17.
@@ -26,6 +26,9 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.administrator.ui_demo2.R;
+import com.example.administrator.ui_demo2.UserFragment;
 
 import java.util.ArrayList;
 
@@ -65,7 +68,6 @@ public class DeviceScanActivity extends ListActivity {
         if (mBluetoothAdapter == null) {
             Toast.makeText(this, R.string.error_bluetooth_not_supported, Toast.LENGTH_SHORT).show();
             finish();
-            return;
         }
     }
 
@@ -194,23 +196,23 @@ public class DeviceScanActivity extends ListActivity {
         private ArrayList<BluetoothDevice> mLeDevices;
         private LayoutInflater mInflator;
 
-        public LeDeviceListAdapter() {
+        private LeDeviceListAdapter() {
             super();
             mLeDevices = new ArrayList<>();
             mInflator = DeviceScanActivity.this.getLayoutInflater();
         }
 
-        public void addDevice(BluetoothDevice device) {
+        private void addDevice(BluetoothDevice device) {
             if(!mLeDevices.contains(device)) {
                 mLeDevices.add(device);
             }
         }
 
-        public BluetoothDevice getDevice(int position) {
+        private BluetoothDevice getDevice(int position) {
             return mLeDevices.get(position);
         }
 
-        public void clear() {
+        private void clear() {
             mLeDevices.clear();
         }
 
@@ -277,7 +279,7 @@ public class DeviceScanActivity extends ListActivity {
         }
     };
 
-    static class ViewHolder {
+    private static class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;
     }

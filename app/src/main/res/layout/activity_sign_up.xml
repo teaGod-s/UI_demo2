@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cornflowerblue"
-    tools:context="com.example.administrator.ui_demo2.SignUpActivity">
+    tools:context="com.example.administrator.ui_demo2.Activity.SignUpActivity">
 
 
     <ImageView

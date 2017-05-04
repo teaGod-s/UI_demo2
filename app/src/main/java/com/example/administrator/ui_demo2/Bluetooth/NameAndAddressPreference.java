@@ -1,4 +1,4 @@
-package com.example.administrator.ui_demo2;
+package com.example.administrator.ui_demo2.Bluetooth;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
