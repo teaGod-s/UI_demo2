@@ -9,13 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.administrator.ui_demo2.R;
-import com.example.administrator.ui_demo2.widget.HalfCircleView;
+import com.example.administrator.ui_demo2.widget.ColorArcProgressBar;
 
 
 public class TabFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private HalfCircleView mHalf;
+    private ColorArcProgressBar mColor;
 
     public TabFragment() {
         // Required empty public constructor
@@ -31,9 +31,9 @@ public class TabFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tab, container, false);
-        float progress = 34.0F;
-        mHalf = (HalfCircleView) view.findViewById(R.id.mhalf);
-        mHalf.setProgress(progress);
+        float progress = 69.0F;
+        mColor = (ColorArcProgressBar) view.findViewById(R.id.bar2);
+        mColor.setCurrentValues(progress);
         return view;
     }
 
