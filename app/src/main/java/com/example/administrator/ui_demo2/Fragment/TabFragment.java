@@ -12,9 +12,11 @@ import com.example.administrator.ui_demo2.R;
 import com.example.administrator.ui_demo2.widget.ColorArcProgressBar;
 
 
+
 public class TabFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
+
     private ColorArcProgressBar mColor;
 
     public TabFragment() {
